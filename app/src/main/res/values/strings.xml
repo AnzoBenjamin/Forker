@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Forker</string>
+    <string name="search_recipe_button">Search</string>
+    <string name="save_recipe">Save</string>
+    <string name="share_recipe">Share</string>
+    <string name="app_home">Home</string>
+    <string name="app_preserve">Preserve</string>
+    <string name="app_share">Share</string>
+    <string name="content_description">This shows the map where food is shared and received</string>
+    <string name="enter_ingredients">Enter Ingredients</string>
+    <string name="welcome_text">Find what matches your ingredients</string>
+    <string name="navigation_drawer_open">Shows the navigation menu for the application</string>
+    <string name="navigation_drawer_close">Returns to the main application</string>
+    <string name="app_motto">Cook more, waste less, share the rest.</string>
+    <string name="api_key">7aa91eb2085b43d1bb1b0f88584c2f89</string>
+</resources>
