@@ -72,29 +72,6 @@
                 android:layout_margin="10dp"
                 android:layout_weight="1" />
 
-            <com.google.android.flexbox.FlexboxLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/recipe_list"
-                app:justifyContent="space_between"
-                android:padding="10dp"
-                >
-                <Button
-                    android:id="@+id/save_button"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/save_recipe"
-                    />
-
-                <Button
-                    android:id="@+id/share_button"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/share_recipe"
-
-                    />
-
-            </com.google.android.flexbox.FlexboxLayout>
 
         </RelativeLayout>
 
