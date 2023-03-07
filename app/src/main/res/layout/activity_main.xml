@@ -10,7 +10,7 @@
             android:id="@+id/main_container"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:padding="20dp">
+            android:padding="10dp">
 
             <ImageView
                 android:id="@+id/hamburger_icon"
@@ -31,17 +31,11 @@
                 android:minHeight="48dp"
                 android:text="@string/welcome_text" />
 
-            <RelativeLayout
-                android:id="@+id/search_container"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/welcome"
-                android:paddingVertical="10dp"
-                android:paddingHorizontal="20dp">
-
                 <LinearLayout
+                    android:id="@+id/search_container"
                     android:layout_width="match_parent"
                     android:orientation="horizontal"
+                    android:layout_below="@id/welcome"
                     android:layout_height="wrap_content">
 
                     <EditText
@@ -54,23 +48,21 @@
                         android:drawableLeft="@drawable/ic_search"
                         android:drawablePadding="10dp"
                         android:layout_margin="10dp"
-                        android:textColorHint="@color/primary_light"
+                        android:textColorHint="@color/grey"
                         android:hint="@string/enter_ingredients"
                         android:inputType="text"
+                        android:padding="8dp"
                         android:minHeight="48dp" />
 
                 </LinearLayout>
-
-            </RelativeLayout>
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/recipe_list"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/search_container"
-                android:padding="10dp"
-                android:layout_margin="10dp"
-                android:layout_weight="1" />
+                android:layout_weight="1"
+                android:padding="10dp" />
 
 
         </RelativeLayout>

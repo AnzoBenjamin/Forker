@@ -24,8 +24,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColor="@color/primary_dark"
-            android:textSize="22sp"
-            android:padding="8dp"
+            android:textSize="18sp"
             android:textStyle="bold"
             android:gravity="center"
             android:layout_margin="10dp"
@@ -59,7 +58,7 @@
                     />
                 <TextView
                     android:id="@+id/recipe_servings"
-                    android:textSize="14sp"
+                    android:textSize="10sp"
                     android:padding="8dp"
                     android:textStyle="italic"
                     android:text="2 people"
@@ -81,7 +80,7 @@
                     />
                 <TextView
                     android:id="@+id/recipe_ratings"
-                    android:textSize="14sp"
+                    android:textSize="10sp"
                     android:textStyle="italic"
                     android:padding="8dp"
                     android:text="2 people"
@@ -108,7 +107,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textColor="@color/primary"
-                    android:textSize="14sp"
+                    android:textSize="10sp"
                     android:padding="8dp"
                     android:textStyle="italic"
                     tools:text="10 mins"/>
@@ -126,11 +125,13 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@drawable/ic_bookmark"
+                android:background="@color/white"
                 />
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@drawable/ic_share"
+                android:background="@color/white"
                 />
 
         </com.google.android.flexbox.FlexboxLayout>
