@@ -122,19 +122,15 @@
             app:justifyContent="space_between"
             android:padding="10dp"
             >
-            <Button
-                android:id="@+id/save_button"
+            <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/save_recipe"
+                android:src="@drawable/ic_bookmark"
                 />
-
-            <Button
-                android:id="@+id/share_button"
+            <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/share_recipe"
-
+                android:src="@drawable/ic_share"
                 />
 
         </com.google.android.flexbox.FlexboxLayout>
