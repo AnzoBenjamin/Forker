@@ -16,7 +16,7 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
 
-        android:padding="16dp">
+        android:padding="10dp">
 
 
         <TextView
@@ -24,7 +24,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColor="@color/primary_dark"
-            android:textSize="18sp"
+            android:textSize="16sp"
             android:textStyle="bold"
             android:gravity="center"
             android:layout_margin="10dp"
@@ -33,7 +33,6 @@
             android:id="@+id/recipe_image"
             android:layout_width="match_parent"
             android:layout_height="200dp"
-            android:layout_margin="8dp"
             android:scaleType="centerCrop"
             android:src="@drawable/foker_logo"
             tools:ignore="ContentDescription"/>
@@ -42,7 +41,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:layout_margin="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="5dp"
             >
             <LinearLayout
                 android:orientation="vertical"
