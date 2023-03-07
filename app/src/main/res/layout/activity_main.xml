@@ -10,37 +10,31 @@
             android:id="@+id/main_container"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:padding="10dp">
-
-            <ImageView
-                android:id="@+id/hamburger_icon"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentEnd="false"
-                android:contentDescription="@string/app_name"
-                android:src="@drawable/arrows_hamburger"
-                />
-
-            <TextView
-                android:id="@+id/welcome"
-                android:layout_width="wrap_content"
+            android:background="@color/grey_light"
+            >
+            <com.google.android.flexbox.FlexboxLayout
+                android:id="@+id/app_header"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/hamburger_icon"
-                android:gravity="center"
-                android:minHeight="48dp"
-                android:text="@string/welcome_text" />
-
-                <LinearLayout
-                    android:id="@+id/search_container"
-                    android:layout_width="match_parent"
-                    android:orientation="horizontal"
-                    android:layout_below="@id/welcome"
-                    android:layout_height="wrap_content">
+                app:justifyContent="space_between"
+                app:alignItems="center"
+                android:paddingHorizontal="10dp"
+                android:background="@color/white"
+                android:layout_marginBottom="4dp"
+                >
+                <ImageView
+                    android:id="@+id/hamburger_icon"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="false"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/ic_hamburger"
+                    />
 
                     <EditText
                         android:id="@+id/ingredient_search_input"
-                        android:layout_width="match_parent"
+                        android:layout_width="250dp"
                         android:layout_height="wrap_content"
                         android:layout_toLeftOf="@id/search_button"
                         android:autofillHints=""
@@ -48,22 +42,28 @@
                         android:drawableLeft="@drawable/ic_search"
                         android:drawablePadding="10dp"
                         android:layout_margin="10dp"
-                        android:textColorHint="@color/grey"
+                        android:textColorHint="@color/primary_light"
+                        android:textColor="@color/primary_dark"
                         android:textSize="14sp"
                         android:hint="@string/enter_ingredients"
                         android:inputType="text"
                         android:padding="8dp"
-                        android:minHeight="48dp" />
-
-                </LinearLayout>
-
+                        />
+                <ImageView
+                    android:id="@+id/forker_logo"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:contentDescription="Logo image"
+                    android:src="@drawable/ic_logo"
+                    />
+            </com.google.android.flexbox.FlexboxLayout>
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/recipe_list"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/search_container"
+                android:layout_below="@+id/app_header"
                 android:layout_weight="1"
-                android:padding="10dp" />
+                />
 
 
         </RelativeLayout>
@@ -74,5 +74,6 @@
         android:layout_height="match_parent"
         android:layout_gravity="start"
         app:headerLayout="@layout/navigation_header"
+
         app:menu="@menu/bottom_navigation_menu" />
 </androidx.drawerlayout.widget.DrawerLayout>
