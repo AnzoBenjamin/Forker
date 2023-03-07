@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
     <item
         android:id="@+id/menu_home"
         android:icon="@drawable/ic_home"
@@ -19,4 +20,17 @@
         android:icon="@drawable/ic_heart"
         android:title="@string/app_share"
         app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/footer_spacer_1"
+        android:checkable="false"
+        android:enabled="false"
+        android:orderInCategory="200"
+        android:title="" />
+    <item
+        android:id="@+id/footer_spacer_2"
+        android:checkable="false"
+        android:enabled="false"
+        android:orderInCategory="200"
+        android:title="" />
 </menu>
